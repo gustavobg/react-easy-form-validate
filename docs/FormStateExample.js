@@ -1,5 +1,5 @@
 import React from 'react';
-import Form from '../src/Form';
+import FormValidate from '../src/FormValidate';
 import { hot } from 'react-hot-loader';
 
 const validateRules = (values) => {
@@ -33,7 +33,7 @@ class FormStateExample extends React.Component {
 
   render() {
     return (
-      <Form values={this.state} validate={validateRules} onSubmitSuccess={this.onSubmitSuccess}>
+      <FormValidate values={this.state} validate={validateRules} onSubmitSuccess={this.onSubmitSuccess}>
         {form => (
           <div>
             <input type="text" value={form.input.name} />
@@ -42,7 +42,7 @@ class FormStateExample extends React.Component {
             <button type="submit">Send</button>
           </div>
         )}
-      </Form>
+      </FormValidate>
     )
   }
 }

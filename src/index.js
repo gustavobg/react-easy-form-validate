@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Form from './Form';
+import FormValidate from './FormValidate';
 
 const render = (Component) => {
   ReactDOM.render(
@@ -9,4 +9,4 @@ const render = (Component) => {
   );
 };
 
-render(Form);
+render(FormValidate);
