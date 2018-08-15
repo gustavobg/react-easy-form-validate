@@ -1,7 +1,31 @@
 ---
 name: Hello world
+route: /
 ---
 
-# Hello world
+import Form from './FormValidate';
+import { Playground, PropsTable } from 'docz';
 
-Hello, I'm a mdx file!
+# Form Validate
+
+<PropsTable of={Form} />
+
+<Playground>
+  {() => {
+    const values = {
+        first_name: 'John',
+        last_name: 'Smith'
+    }
+    return <Form values={values}>{form => (
+        <div>
+            First Name <br />
+            <input name="first_name" type="text" value={form.input.first_name} />
+            <br />
+            Last Name <br />
+            <input name="last_name" type="text" value={form.input.last_name} />
+            <br /><br />
+            <button onClick={form.handleSubmit}>Save values</button>
+        </div>
+    )}</Form>
+  }}
+</Playground>

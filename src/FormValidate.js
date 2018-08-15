@@ -110,11 +110,16 @@ class FormValidate extends React.Component {
 }
 
 FormValidate.propTypes = {
+  /** plain object containing values from form */
   // eslint-disable-next-line react/forbid-prop-types,react/no-unused-prop-types
   values: PropTypes.object,
+  /** function triggered on form submit success */
   onSubmitSuccess: PropTypes.func,
+  /** function triggered on form submit error (invalid fields) */
   onSubmitError: PropTypes.func,
+  /** children function: <Form>{(form) => ()</Form> */
   children: PropTypes.func,
+  /** validate rules function */
   validate: PropTypes.func,
 };
 
