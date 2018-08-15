@@ -1,4 +1,6 @@
 {
-  "presets": ["react", "env", "stage-3"],
-  "plugins": ["transform-decorators-legacy"]
+  "presets": ["@babel/react", "@babel/env"],
+  "plugins": [
+    ["@babel/proposal-decorators", { "legacy": true }]
+  ]
 }

@@ -19,13 +19,15 @@ describe('FormValidate', () => {
     };
 
     return mount(
-      <Form {...options}>{form => (
-        <div>
-          <input name="name" type="text" value={form.input.name} readOnly />
-          <span>{form.errors.name}</span>
-          <button type="submit" onClick={form.handleSubmit} />
-        </div>
-        )}</Form>,
+      <Form {...options}>
+        {form => (
+          <div>
+            <input name="name" type="text" value={form.input.name} readOnly />
+            <span>{form.errors.name}</span>
+            <button type="submit" onClick={form.handleSubmit} />
+          </div>
+        )}
+      </Form>,
     );
   };
 

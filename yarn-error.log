@@ -1,0 +1,92 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add --dev babel-jest 'babel-core@7.0.0-0' @babel/core
+
+PATH: 
+  C:\Program Files\Docker\Docker\Resources\bin;C:\Python27\;C:\Python27\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files\Java\jdk1.8.0_144\bin;C:\ProgramData\nvm;C:\Program Files\nodejs;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\WINDOWS\System32\OpenSSH\;C:\Ruby23-x64\bin;C:\Users\Gustavo Pessoal\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\Gustavo Pessoal\AppData\Local\Yarn\bin;C:\Users\Gustavo Pessoal\AppData\Roaming\npm;C:\Android\sdk\platform-tools;
+
+Yarn version: 
+  0.27.5
+
+Node version: 
+  8.1.3
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+    "name": "react-easy-form-validate",
+    "version": "1.0.0",
+    "description": "Easy and light form validation using state",
+    "main": "index.js",
+    "scripts": {
+      "test": "jest",
+      "build": "cross-env NODE_ENV=production babel ./src --ignore *.test.js --out-dir ./dist",
+      "docz:dev": "docz dev",
+      "docz:build": "docz build"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/gustavobg/react-easy-form-validate.git"
+    },
+    "keywords": [
+      "react",
+      "form",
+      "validate",
+      "light"
+    ],
+    "author": "Gustavo Gebrim",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/gustavobg/react-easy-form-validate/issues"
+    },
+    "homepage": "https://github.com/gustavobg/react-easy-form-validate#readme",
+    "dependencies": {
+      "autobind-decorator": "^2.1.0",
+      "lodash.isequal": "^4.5.0",
+      "lodash.omit": "^4.5.0",
+      "prop-types": "^15.6.2",
+      "react": "^16.4.2"
+    },
+    "devDependencies": {
+      "@babel/cli": "^7.0.0-rc.1",
+      "@babel/core": "^7.0.0-rc.1",
+      "@babel/plugin-proposal-decorators": "^7.0.0-rc.1",
+      "@babel/preset-env": "^7.0.0-rc.1",
+      "@babel/preset-react": "^7.0.0-rc.1",
+      "@babel/preset-stage-3": "^7.0.0-rc.1",
+      "babel-jest": "^23.4.2",
+      "cross-env": "^5.2.0",
+      "docz": "latest",
+      "enzyme": "^3.4.1",
+      "enzyme-adapter-react-16": "^1.2.0",
+      "eslint": "^5.3.0",
+      "eslint-config-airbnb": "^17.1.0",
+      "eslint-plugin-import": "^2.14.0",
+      "eslint-plugin-jsx-a11y": "^6.1.1",
+      "eslint-plugin-react": "^7.11.0",
+      "jest": "^23.5.0",
+      "react-dom": "^16.4.2",
+      "regenerator-runtime": "^0.12.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: https://registry.yarnpkg.com/%27babel-core: Not found
+      at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\yarn-cli.js:58200:18)
+      at Request.self.callback (C:\Program Files (x86)\Yarn\lib\yarn-cli.js:114242:22)
+      at emitTwo (events.js:125:13)
+      at Request.emit (events.js:213:7)
+      at Request.<anonymous> (C:\Program Files (x86)\Yarn\lib\yarn-cli.js:115225:10)
+      at emitOne (events.js:115:13)
+      at Request.emit (events.js:210:7)
+      at IncomingMessage.<anonymous> (C:\Program Files (x86)\Yarn\lib\yarn-cli.js:115145:12)
+      at Object.onceWrapper (events.js:314:30)
+      at emitNone (events.js:110:20)
+      at IncomingMessage.emit (events.js:207:7)
