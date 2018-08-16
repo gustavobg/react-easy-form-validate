@@ -5,7 +5,7 @@ import FormValidate from './FormValidate';
 const render = (Component) => {
   ReactDOM.render(
     <Component />,
-    document.getElementById('app')
+    document.getElementById('app'),
   );
 };
 
