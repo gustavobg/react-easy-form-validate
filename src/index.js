@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Form from './Form';
+import FormValidate from './FormValidate';
 
 const render = (Component) => {
   ReactDOM.render(
     <Component />,
-    document.getElementById('app')
+    document.getElementById('app'),
   );
 };
 
-render(Form);
+render(FormValidate);
+
+module.hot.accept();

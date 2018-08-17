@@ -4,3 +4,6 @@
 out
 gen
 node_modules
+dist
+.next
+dist
