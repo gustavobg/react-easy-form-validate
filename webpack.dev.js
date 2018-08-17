@@ -1,18 +1,13 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
-  entry: './docs/index.js',
+  entry: './src/index.js',
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: ['babel-loader'],
-      },
-      {
-        test: /\.(md|mdx)$/,
-        use: ['catalog/loader', 'raw-loader'],
       },
     ],
   },
@@ -21,9 +16,6 @@ module.exports = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new HtmlWebpackPlugin({
-      template: 'docs/index.html',
-    }),
   ],
   output: {
     path: `${__dirname}/dist`,
@@ -33,5 +25,6 @@ module.exports = {
   devServer: {
     contentBase: './dist',
     hot: true,
+    port: 3050,
   },
 };

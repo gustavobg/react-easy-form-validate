@@ -1,16 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Catalog } from 'catalog';
-import IntroductionMd from './intro.mdx';
+import IntroductionMd from './intro.md';
 import Form from '../src/FormValidate';
 
 ReactDOM.render(
   <Catalog
-    title="My Catalog"
+    title="EZ React Form Validate"
     pages={[
       {
         path: '/', // The path where the page can be accessed
-        title: 'Introduction', // The page title
+        title: 'Basic Example', // The page title
         component: IntroductionMd,
         imports: { Form },
       },

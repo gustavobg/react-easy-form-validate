@@ -10,3 +10,5 @@ const render = (Component) => {
 };
 
 render(FormValidate);
+
+module.hot.accept();
